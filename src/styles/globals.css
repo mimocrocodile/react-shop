@@ -4,11 +4,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat' sans-serif;
 }
-:where(a, p, div){
+:where(a, p, div, button, input){
     font-size: clamp(.75rem, 2vw, 1rem);
     line-height: clamp(1rem, 2vw, 1.5rem)
 }
-.header-main{
+.header-top, .header-main, .header-bottom{
     max-width: 1290px;
     margin: 0 auto;
+}
+
+.home{
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    font-weight: 700;
+    color: #61dafb;
 }

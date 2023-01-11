@@ -1,0 +1,12 @@
+.input{
+    width: 24px;
+    height: 24px;
+    background: url("../../../assets/search-icon.svg") center no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
