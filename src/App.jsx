@@ -7,6 +7,7 @@ import { News } from './components/pages/News'
 import { Register } from './components/pages/Registration'
 import { Favourite } from './components/pages/Favourite'
 import { Cart } from './components/pages/Cart'
+import { InProgress } from './components/pages/InProgress'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path='register' element={<Register/>}/>
               <Route path='favourite' element={<Favourite/>}/>
               <Route path='cart' element={<Cart/>}/>
+              <Route path="*" element={<InProgress/>} />
           </Route>
       </Routes>
 

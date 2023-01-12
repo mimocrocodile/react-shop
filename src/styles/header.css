@@ -98,3 +98,25 @@ header:before{
     gap: 1rem;
     width: min-content;
 }
+.header-bottom{
+    display: flex;
+}
+.catalog-btn{
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 113px;
+
+}
+.header-bottom > div{
+    margin-left: clamp(30px, 60vw, 107px);
+    display: flex;
+    gap: clamp(1rem, 60vw, 4.125rem);
+    padding: 14px 0;
+}
+.header-bottom a{
+    text-transform: uppercase;
+    color: #16181d;
+    font-weight: 700;
+}
