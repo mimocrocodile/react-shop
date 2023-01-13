@@ -1,6 +1,13 @@
 import { CustomForm } from '../UI/form/CustomForm'
 import { Link } from 'react-router-dom'
+
+import { CatalogMenu } from './CatalogMenu'
 function Header() {
+
+    // function hideCatalog(){
+    //     catalogMenu.classList.toggle('hidden')
+    //     console.log(`Hello ${hidden}`)
+    // }
     return (
         <header>
             <div className="header-top">
@@ -26,7 +33,8 @@ function Header() {
                 </div>
             </div>
             <div className="header-bottom">
-                <button className='catalog-btn'>Каталог</button>
+                <CatalogMenu />
+
                 <div>
                     <Link to="/hot-offer">Горячие предложения</Link>
                     <Link to="/new">Новинки</Link>
