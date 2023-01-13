@@ -135,25 +135,26 @@ header:before{
     z-index: 2;
     background-color: transparent;
     display: flex;
-    border: 1px solid green;
 }
 .catalog-menu{
     box-shadow: 0px 40px 80px rgba(25, 25, 77, 0.2);
     max-width: 300px;
     width: clamp(100px, 60vw, 300px);
+    height: min-content;
+    display: grid;
 }
 .catalog-main{
     width: clamp(450px, 60vw, 989px);
-    box-shadow: 0px 40px 80px rgba(25, 25, 77, 0.2);
+    box-shadow: 40px 40px 80px rgba(25, 25, 77, 0.2);
     width: clamp(450px, 60vw, 989px);
     padding: 1.562rem 1.875rem;
-    border: 1px solid red;
+    
 }
 .catalog-item{
     padding: 12px 20px 12px 16px;
     user-select: none;
 
-    /* position: relative; */
+    position: relative;
     font-weight: 500;
 }
 .catalog-item:hover{
