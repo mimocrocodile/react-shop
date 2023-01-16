@@ -1,6 +1,7 @@
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useState } from 'react';
 import { Card } from './Card/Card';
 
 function NextArrow(props){
@@ -17,10 +18,10 @@ function PrevArrow(props){
 }
 
 
-function Carousel({filterItems}){
+function Carousel(props){
     var settings = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -29,20 +30,23 @@ function Carousel({filterItems}){
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />
       };
-      const arr = []
+     let  arr = []
       const Cards = () =>{
-          for(let i = 1; i < 9; i++){
-              let type = ''
-              i%2==0 ? type = "discount" : type = "new"
-              arr.push(
-                  <Card key={i} number = {i} type={type}/>
-              )
-
+        
+            for(let i = 1; i < 9; i++){
+                let type = ''
+                i%2==0 ? type = "discount" : type = "new"
+                arr.push( <Card key={i} number = {i} type={type}/>)
+              
+            }
+       
+          if(props.type != ""){
+             arr = arr.filter(el => el.props.type == props.type)
           }
           return(arr)
         }
 
-        filterItems(arr)
+        // filterItems(arr)
 
     return(
         <>

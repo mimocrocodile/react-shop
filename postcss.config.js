@@ -6,7 +6,7 @@ import autoprefixer from 'autoprefixer'
 export default  {
     plugins: [
         postcssImport,
-        PostcssPresetEnv({stage: 1}),
+        PostcssPresetEnv({ stage: 1}),
         cssnanoPlugin,
         autoprefixer
     ]

@@ -5,7 +5,7 @@
     font-family: 'Montserrat' sans-serif;
 }
 body{
-    background-color: #F1F1F3;
+    background-color: #f1f1f3;
 }
 :where(a, p, div, button, input){
     font-size: clamp(.75rem, 2vw, 1rem);
@@ -35,6 +35,7 @@ body{
     z-index: 2;
     top: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 .arr-right{
     &:before{
