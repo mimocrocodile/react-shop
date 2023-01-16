@@ -4,11 +4,14 @@
     box-sizing: border-box;
     font-family: 'Montserrat' sans-serif;
 }
+body{
+    background-color: #F1F1F3;
+}
 :where(a, p, div, button, input){
     font-size: clamp(.75rem, 2vw, 1rem);
     line-height: clamp(1rem, 2vw, 1.5rem)
 }
-.header-top, .header-main, .header-bottom{
+.header-top, .header-main, .header-bottom, .main{
     max-width: 1290px;
     margin: 0 auto;
 }
@@ -20,3 +23,28 @@
     color: #61dafb;
 }
 
+
+.arr-left{
+    &:before{
+        content: url("./src/assets/arrow-left.png") ;
+    }
+    left: -25px;
+}
+.arr-left, .arr-right{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.arr-right{
+    &:before{
+        content: url("./src/assets/arrow-right.png");
+    }
+    right: -25px;
+}
+/* .slick-slide {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  } */

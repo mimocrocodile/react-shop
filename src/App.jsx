@@ -8,6 +8,7 @@ import { Register } from './components/pages/Registration'
 import { Favourite } from './components/pages/Favourite'
 import { Cart } from './components/pages/Cart'
 import { InProgress } from './components/pages/InProgress'
+import { Main } from './components/elements/MainPage'
 import './App.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <>
      <Routes>
           <Route path="/" element={<Layout />}>
+              <Route path='/' element={<Main/>} />
               <Route path="about" element={<About />} />
               <Route path="contacts" element={<Contacts />} />
               <Route path="news" element={<News />}/>

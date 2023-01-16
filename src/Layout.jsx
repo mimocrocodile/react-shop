@@ -1,18 +1,17 @@
 import { Outlet, Link } from 'react-router-dom'
 import App from './App'
 import { Header } from './components/elements/header'
-
+import { Main } from './components/elements/MainPage'
 function Layout() {
     return (
         <>
         <Header/>
-        <div className="header-second">
-            <Link to="/new">New</Link>
-        </div>
-        <main className="block">
-            <Outlet/>
-        </main>
 
+        {/* <main className="block">
+
+        </main> */}
+        {/* <Main></Main> */}
+        <Outlet/>
         </>
     )
 }
