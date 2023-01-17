@@ -12,13 +12,11 @@ import { Main } from './components/elements/MainPage'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
      <Routes>
           <Route path="/" element={<Layout />}>
-              <Route path='/' element={<Main/>} />
+              <Route index element={<Main/>} />
               <Route path="about" element={<About />} />
               <Route path="contacts" element={<Contacts />} />
               <Route path="news" element={<News />}/>

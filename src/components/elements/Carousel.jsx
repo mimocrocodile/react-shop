@@ -30,28 +30,11 @@ function Carousel(props){
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />
       };
-     let  arr = []
-      const Cards = () =>{
-        
-            for(let i = 1; i < 9; i++){
-                let type = ''
-                i%2==0 ? type = "discount" : type = "new"
-                arr.push( <Card key={i} number = {i} type={type}/>)
-              
-            }
-       
-          if(props.type != ""){
-             arr = arr.filter(el => el.props.type == props.type)
-          }
-          return(arr)
-        }
-
-        // filterItems(arr)
 
     return(
         <>
             <Slider {...settings}>
-                {Cards()}
+                {props.base.map((el, index) => <Card key={index} info={el}/>)}
             </Slider>
         </>
     )

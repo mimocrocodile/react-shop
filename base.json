@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "desc": "Тройной дисплей Wavlink USB C 4K 12 в 1 Док-станция USB C с DP, HDMI и VGA ...",
+        "article": "Арт: 25025",
+        "price": 16500,
+        "newprice": 0,
+        "type": "",
+        "discountValue": 0
+    },
+    {
+        "id": 2,
+        "desc": "Игровой ПК ABS Gladiator — Windows 11 Pro — Intel i7 11700KF — GeForce RTX 3070 ...",
+        "article": "Арт: 25025",
+        "price": 750500,
+        "newprice": 600000,
+        "type": "discount",
+        "discountValue": 20
+    },
+    {
+        "id": 3,
+        "desc": "Монохромный лазерный принтер HP LaserJet Pro M404n",
+        "article": "Арт: 25025",
+        "price": 82500,
+        "newprice": 0,
+        "type": "new",
+        "discountValue": 0
+    },
+    {
+        "id": 4,
+        "desc": "Внутренний твердотельный накопитель (SSD) Western Digital WD BLACK SN850 ...",
+        "article": "Арт: 25025",
+        "price": 55400,
+        "newprice": 40000,
+        "type": "discount",
+        "discountValue": 15
+    },
+    {
+        "id": 5,
+        "desc": "TP-Link WiFi 6 AX3000 PCIe WiFi Card (Archer TX3000E), до 2400 Мбит/с, Bluetooth ...",
+        "article": "Арт: 25025",
+        "price": 37200,
+        "newprice": 0,
+        "type": "",
+        "discountValue": 0
+    },
+    {
+        "id": 6,
+        "desc": "Тройной дисплей Wavlink USB C 4K 12 в 1 Док-станция USB C с DP, HDMI и VGA ...",
+        "article": "Арт: 25025",
+        "price": 16500,
+        "newprice": 0,
+        "type": "new",
+        "discountValue": 0
+    },
+    {
+        "id": 7,
+        "desc": "Игровой ПК ABS Gladiator — Windows 11 Pro — Intel i7 11700KF — GeForce RTX 3070 ...",
+        "article": "Арт: 25025",
+        "price": 750500,
+        "newprice": 0,
+        "type": "new",
+        "discountValue": 0
+    }
+]

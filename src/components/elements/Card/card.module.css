@@ -2,7 +2,8 @@
     max-width: 250px;
     border-radius: 4px;
     background-color: white;
-    padding-top: 20px;
+
+    height: 483px;
     & img{
         object-fit: contain;
         margin: 0 auto;
@@ -19,5 +20,41 @@
     height: 100%;
     min-height: 250px;
     max-height: 250px;
+    position: relative;
+    padding-top: 20px;
 }
 
+.card-tag{
+    position: absolute;
+    z-index: 2;
+    top: 15px;
+    left: 15px;
+    padding: 4px 8px;
+    font-size: .750rem;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+.card-tag-new{
+    background-color: rgba(34, 210, 99, 1);
+}
+
+.card-tag-discount{
+    background-color: rgba(255, 32, 69, 1);
+}
+.card-tag-discount, .card-tag-new{
+    color: white;
+}
+
+.newprice{
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.250rem;
+}
+
+.oldprice{
+    font-size: .875rem;
+    line-height: 1.125rem;
+    color: rgba(125, 130, 140, 1);
+    text-decoration: line-through;
+}

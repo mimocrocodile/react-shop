@@ -5,8 +5,8 @@ import { CatalogMain } from './CatalogMain'
 function CatalogMenu(){
     const [hiddenItem, setHiddenItem] = useState('hidden')
     const [hiddenMenu, setHiddenMenu] = useState('hidden')
-   
-    
+
+
     return(
         <>
          <div className="header-catalog" onMouseOver={() =>setHiddenItem('')} onMouseLeave ={()=>setHiddenItem('hidden')}>
